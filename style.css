@@ -11,12 +11,13 @@ body {
  display: block;
  min-height: 100vh;
 background: linear-gradient(#72480d, #e7c482);}
-@media (max-width: 768px){
+
 .nav-container{
   width: 100%;
   background-color: var(--light-brown);
   justify-content: spacing;
 }
+@media (max-width: 768px){
 .nav-bar {
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
