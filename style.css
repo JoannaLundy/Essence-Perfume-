@@ -11,7 +11,7 @@ body {
  display: block;
  min-height: 100vh;
 background: linear-gradient(#72480d, #e7c482);}
-
+@media (max-width: 768px){
 .nav-container{
   width: 100%;
   background-color: var(--light-brown);
@@ -47,6 +47,7 @@ background: linear-gradient(#72480d, #e7c482);}
     text-align: center;
     width: 60%;
     justify-self: end;
+}
 }
 a:link, a:visited {
     color: inherit;
