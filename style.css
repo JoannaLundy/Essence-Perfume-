@@ -1,112 +1,61 @@
-:root{--light-brown: #e7c482;
-      --dark-brown: #7e685a;
-      --white:#fff;
-      --black:#000;}
-
-body {
- box-sizing: border-box;
- margin: 0; 
- padding: 0;
- font-family:"Lora", serif;
- display: block;
- min-height: 100vh;
-background: linear-gradient(#72480d, #e7c482);}
-
-.nav-container{
-  width: 100%;
-  background-color: var(--light-brown);
-  justify-content: spacing;
-}
+/* ✅ Fix Navigation Bar */
 .nav-bar {
-    display: grid;
-    grid-template-columns: 0.2fr auto 1fr;
+    display: flex; /* Switch from Grid to Flexbox */
+    justify-content: space-between; /* Space between logo & menu */
     align-items: center;
     height: 60px;
-    width:50%;
-    max-width: 10px;
+    width: 100%; /* Ensure full-width */
+    max-width: 1200px;
     margin: 0 auto;
-    size: -10px;
+    padding: 10px 20px;
 }
-.navbar-logo:hover{
 
-}
-#navbar-logo {
-    
-    color:#492d0f;
-    justify-self:start;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    font-size: 40px;
-    height: 20px;
-    cursor: pointer;
-}
-.nav-menu{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+/* ✅ Fix Navigation Menu */
+.nav-menu {
+    display: flex;
     list-style: none;
+    gap: 20px;
     text-align: center;
-    width: 60%;
-    justify-self: end;
+    justify-content: flex-end; /* Push links to the right */
 }
-a:link, a:visited {
-    color: inherit;
+
+/* ✅ Fix Navigation Links */
+.nav-links {
+    color: #492d0f;
     text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
 }
-.nav-links{
-    color:#492d0f;
-    text-decoration: none;
-    font-size: 30px;
-}
+
 .nav-links:hover {
-    color:var(--white);
-    transition: all 0.2s ease-out;
+    color: var(--white);
     padding: 6px 16px;
     border-radius: 4px;
 }
-.nav-link-btn {
-    background-color: #72480d;
-    padding: 1px 30px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 30px;
-}
-.nav-link-btn:hover  {
-    background-color: transparent;
-    color: var(--white);
-    border-radius:4px;
-    border: solid 1px var(--dark-brown);
-    transition: all 0.3s ease-out;
-    text-decoration: none;
-}
-.perfumesearch{
-    color:#050505;
-    text-decoration: none;
-    font-size: 30px;
-}
-.perfumesearch:hover{ 
-    background-color: transparent;
-    color: var(--white);
-    border-radius:4px;
-    border: solid 1px var(--dark-brown);
-    transition: all 0.3s ease-out;
-    text-decoration: none;
 
+/* ✅ Responsive Navigation for Mobile */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Stack links */
+        width: 100%;
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .nav-links {
+        font-size: 18px; /* Adjust text size */
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
 }
 
-
-.coco-container h2{
-    color: white;
-    font-size: 40px;
-
-}
-h3{font-size: 60px;
-    align-items: center;
-    color: rgb(246, 246, 246);
-    text-align: center;
-
-}
-
-h3:hover {
     color:var(--white);
     transition: all 0.2s ease-out;
     padding: 6px 16px;
