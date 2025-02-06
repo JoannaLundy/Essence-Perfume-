@@ -1,3 +1,4 @@
+
 :root{--light-brown: #e7c482;
       --dark-brown: #7e685a;
       --white:#fff;
@@ -11,7 +12,7 @@ body {
  display: block;
  min-height: 100vh;
 background: linear-gradient(#72480d, #e7c482);}
-
+@media (max-width: 768px){
 .nav-container{
   width: 100%;
   background-color: var(--light-brown);
@@ -219,4 +220,5 @@ h3:hover {
     padding: 20px;
     width:100%;
 
+}
 }
