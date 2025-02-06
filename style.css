@@ -80,6 +80,8 @@ a:link, a:visited {
     transition: all 0.3s ease-out;
     text-decoration: none;
 }
+}
+@media (max-width: 768px){
 .perfumesearch{
     color:#050505;
     text-decoration: none;
