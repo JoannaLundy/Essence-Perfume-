@@ -17,7 +17,6 @@ background: linear-gradient(#72480d, #e7c482);}
   background-color: var(--light-brown);
   justify-content: spacing;
 }
-@media only screen and (min-width:600 px){
 .nav-bar {
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
@@ -28,7 +27,7 @@ background: linear-gradient(#72480d, #e7c482);}
     margin: 0 auto;
     size: -10px;
 }
-}
+
 .navbar-logo:hover{
 
 }
