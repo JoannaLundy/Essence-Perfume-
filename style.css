@@ -223,8 +223,9 @@ h3:hover {
     width:100%;
 
 }
+
 @media (max-width: 768px) {
-    /* ✅ Fix Navbar for Mobile */
+    
     .nav-bar {
         display: flex; /* Change from grid to flex */
         flex-direction: column; /* Stack items vertically */
@@ -248,7 +249,7 @@ h3:hover {
         display: block;
     }
 
-    /* ✅ Fix Product Grid for Mobile */
+    
     .shoppingperfumes {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust layout */
@@ -267,7 +268,7 @@ h3:hover {
         display: block;
     }
 
-    /* ✅ Fix Parent Container */
+    
     .parentcontainer {
         flex-direction: column; /* Stack elements vertically */
         align-items: center;
