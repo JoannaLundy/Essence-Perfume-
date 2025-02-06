@@ -15,7 +15,7 @@ body {
     background: linear-gradient(#72480d, #e7c482);
 }
 
-/* ✅ Navbar for Desktop */
+/* Navbar for Desktop */
 .nav-container {
     width: 100%;
     background-color: var(--light-brown);
@@ -58,7 +58,7 @@ body {
     border-radius: 4px;
 }
 
-/* ✅ Product Grid for Desktop */
+/* Product Grid for Desktop */
 .shoppingperfumes {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
@@ -93,7 +93,7 @@ body {
     border: 2px solid #c27c14;
 }
 
-/* ✅ Parent container layout */
+/*  Parent container layout */
 .parentcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +106,7 @@ body {
 
 /* 🌟 MOBILE-FRIENDLY STYLES */
 @media (max-width: 768px) {
-    /* ✅ Fix Navbar for Mobile */
+    /* Fix Navbar for Mobile */
     .nav-bar {
         flex-direction: column; /* Stack logo & menu */
         align-items: center;
@@ -128,7 +128,7 @@ body {
         display: block;
     }
 
-    /* ✅ Make Product Grid Responsive */
+    /* Make Product Grid Responsive */
     .shoppingperfumes {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid */
         width: 100%;
@@ -143,7 +143,7 @@ body {
         margin: 0 auto;
     }
 
-    /* ✅ Stack Parent Container Elements */
+    /* Stack Parent Container Elements */
     .parentcontainer {
         flex-direction: column; /* Stack elements vertically */
         align-items: center;
